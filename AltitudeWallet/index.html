@@ -44,8 +44,27 @@
             document
                 .getElementById("login-form")
                 .addEventListener("submit", function (event) {
-                    event.preventDefault();
-                    window.location.href = "dashboard.html";
+                    event.preventDefault(); // Prevent the form from submitting
+
+                    const validCredentials = [
+                        { username: "user1", password: "password1" },
+                        { username: "IvanP", password: "Crypto401k" },
+                    ];
+
+                    const username = document.getElementById("username").value;
+                    const password = document.getElementById("password").value;
+
+                    const isValid = validCredentials.some(
+                        (cred) =>
+                            cred.username === username &&
+                            cred.password === password,
+                    );
+
+                    if (isValid) {
+                        window.location.href = "dashboard.html"; // Redirect to dashboard or desired page
+                    } else {
+                        alert("Invalid username or password."); // Show an error message
+                    }
                 });
         </script>
     </body>
