@@ -9,7 +9,7 @@ const coins = [
   { name: "Brett", balance: 1698.31, symbol: "Brett", id: "brett-coin-id" }, // Replace with actual ID
   { name: "Wolf", balance: 74589.43, symbol: "Wolf", id: "wolf-coin-id" }, // Replace with actual ID
   { name: "Pika", balance: 192307.69, symbol: "Pika", id: "pika-coin-id" }, // Replace with actual ID
-  { name: "Bdag", balance: 54629.88, symbol: "Bdag", id: "bdag-coin-id" }, // Replace with actual ID
+  { name: "Bdag", balance: 69302.88, symbol: "Bdag", id: "bdag-coin-id" }, // Replace with actual ID
   { name: "ADA", balance: 793.0, symbol: "ADA", id: "cardano" }, // Added ADA with balance 793
 ];
 
